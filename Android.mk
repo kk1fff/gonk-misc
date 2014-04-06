@@ -104,6 +104,20 @@ LOCAL_SHARED_LIBRARIES :=
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := memc
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_MODULE_TAGS  := debug	# should match system/extras/procrank/Android.mk
+LOCAL_SRC_FILES    := memconsumer.c
+include $(BUILD_EXECUTABLE)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := getsysstat
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_MODULE_TAGS  := debug	# should match system/extras/procrank/Android.mk
+LOCAL_SRC_FILES    := getsysstat.c
+include $(BUILD_EXECUTABLE)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := oom-msg-logger
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := DATA

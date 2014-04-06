@@ -18,6 +18,8 @@ PRODUCT_PACKAGES += \
 	rild \
 	rilproxy \
 	oom-msg-logger \
+	memc \
+	getsysstat \
 	$(NULL)
 
 ifneq ($(B2G_VALGRIND),)
